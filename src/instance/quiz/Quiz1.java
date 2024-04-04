@@ -13,21 +13,24 @@ public class Quiz1 {
 
 	public static void main(String[] args) {
 		Person person = new Person();
-		person.name = "James";
-		person.age = 40;
-		person.isMarried = true;
-		person.numberOfChildren = 3;
 		
+		person.name = "James";
 		System.out.println("이름 :" + person.name);
+		
+		person.age = 40;
 		System.out.println("나이 :" + person.age);
+		
+		person.isMarried = true;
 		System.out.println("결혼 여부 :" + person.isMarried);
-		System.out.println("자녀 수 :" + person.numberOfChildren);
+		
+		person.numberChildren = 3;
+		System.out.println("자녀 수 :" + person.numberChildren);
 	}
 }
 
 class Person {
-	String name; //이름
-	int age; //나이
-	boolean isMarried; //결혼여부
-	int numberOfChildren; //자식수
+	String name; // 문자열
+	int age;  // 정수
+	boolean isMarried; // 참 거짓 
+	int numberChildren; // 자식 수 = 정수
 }

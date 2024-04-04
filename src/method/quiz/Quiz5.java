@@ -8,11 +8,11 @@ package method.quiz;
  * */
 public class Quiz5 {
 
-	//두 수를 나누는 함수를 선언	 
+		 
 	public static void divide(int n1, int n2){	
-		if(n2 == 0) {	//나누는 수가 0이라면
+		if(n2 == 0) {	
 			System.out.println("나누는 수는 0이 될 수 없습니다");
-			return; // 함수를 강제로 종료한다
+			return; 
 		} 
 		
 		int result = n1/n2;
@@ -20,8 +20,8 @@ public class Quiz5 {
 	}
 
 	public static void main(String[] args) {
-		divide(10, 2);	//함수 호출
-//		divide(10, 0);
+		divide(20, 2);	
+
 	}
 
 }

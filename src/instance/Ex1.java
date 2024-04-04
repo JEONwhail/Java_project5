@@ -22,7 +22,8 @@ public class Ex1 {
 		System.out.println("=================================");
 		student.showStudentInfo(); //객체의 메소드를 사용해서 학생의 모든 정보 출력
 		System.out.println("=================================");	
-		System.out.println("객체의 주소는 " + student + " 입니다."); //참조 변수 값 출력 (인스턴스 주소)
+		System.out.println("객체의 주소는 " + student + " 입니다."); 
+		//참조 변수 값 출력 (인스턴스 주소)
 		
 	}
 }

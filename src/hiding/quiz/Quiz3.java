@@ -9,18 +9,19 @@ public class Quiz3 {
 
 	public static void main(String[] args) {
 		MyDate date = new MyDate();
-		date.setMonth(2);
+		date.setMonth(4);
+		System.out.println("현재는 " + date.getMonth() + "월 입니다");
+		
+		date.setMonth(19);
 		System.out.println("현재는 " + date.getMonth() + "월 입니다");
 
-		date.setMonth(13);
-		System.out.println("현재는 " + date.getMonth() + "월 입니다");
 	}
 }
 
 class MyDate {
 
-	private int month; // 월
-	private int day; // 일
+	private int month; 
+	private int day; 
 
 	public int getMonth() {
 		return month;
@@ -28,8 +29,8 @@ class MyDate {
 
 	public void setMonth(int month) {
 		if (month < 1 || month > 12) {
-			System.out.println(month + "월은 잘못된 월입니다.");
-			return; //함수종료
+			System.out.println("잘못된 월입니다.");
+			return; 
 		} 
 		this.month = month;
 	}

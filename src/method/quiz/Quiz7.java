@@ -6,15 +6,16 @@ package method.quiz;
  * */
 public class Quiz7 {
 
-	//각 자리수의 합을 구하는 메소드 선언
-	public static void hap(int num){
-		int sum = 0; //합계		
+	public static void duham(int num){
+		int sum = 0; 	  // 합계
 		//1의 자리
 		sum = sum + (num%10);
-		//10의자리
+		
+		// 10의 자리
 		num = num/10;
 		sum = sum + (num%10);
-		//100의자리
+		
+		// 100의 자리
 		num = num/10;
 		sum = sum + num;
 
@@ -22,7 +23,7 @@ public class Quiz7 {
 	}
 	
 	public static void main(String[] args) {
-		hap(932);
+		duham(932);
 	}
 
 }

@@ -1,5 +1,6 @@
 package instance.quiz;
 
+
 /* 
  * 다음과 같이 주문클래스(Order)를 정의하세요.
  * 주문번호, 주문날짜, 주문자이름, 배송지를 속성으로 갖습니다.
@@ -25,10 +26,10 @@ public class Quiz2 {
 }
 
 class Order {
-	int orderNo; // 주문번호
-	String orderDate; // 주문일자. 날짜는 Date 클래스를 많이 사용하지만, 여기서는 일단 String으로
-	String customerName;// 주문자이름
-	String address; // 배송지
+	int orderNo; 
+	String orderDate; 
+	String customerName;
+	String address;
 
 	public void showOrderInfo() {
 		System.out.println("주문번호:" + orderNo + ", 주문날짜:" + orderDate + ", 주문자이름: " + customerName + ", 배송지:" + address);

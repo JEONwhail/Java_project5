@@ -11,36 +11,45 @@ package hiding.quiz;
  * (스프링, 15000, 한빛컴퍼니, 500)
  * 모든 인스턴스의 정보를 출력하세요.
  * 이때, 책의 정보는 getter를 사용해서 출력하세요.
+ * 
  * */
 public class Quiz1 {
 	public static void main(String[] args) {
 		Book book1 = new Book();
 		book1.setTitle("자바프로그래밍");
-		book1.setPrice(20000);
-		book1.setCompany("한빛컴퍼니");
-		book1.setPage(300);
 		System.out.println("제목:"+book1.getTitle());
+		
+		book1.setPrice(20000);
 		System.out.println("가격:"+book1.getPrice());
+		
+		book1.setCompany("한빛컴퍼니");
 		System.out.println("출판사:"+book1.getCompany());
+		
+		book1.setPage(300);
 		System.out.println("페이지수:"+book1.getPage());
+		
 		
 		Book book2 = new Book();
 		book2.setTitle("스프링");
-		book2.setPrice(15000);
-		book2.setCompany("한빛컴퍼니");
-		book2.setPage(500);
 		System.out.println("제목:"+book2.getTitle());
+		
+		book2.setPrice(15000);
 		System.out.println("가격:"+book2.getPrice());
+		
+		book2.setCompany("한빛컴퍼니");
 		System.out.println("출판사:"+book2.getCompany());
+	
+		book2.setPage(500);
 		System.out.println("페이지수:"+book2.getPage());
+		
 	}
 }
 
 class Book {
-	private String title; //제목
-	private int price; //가격
-	private String company; //출판사
-	private int page; //페이지수
+	private String title; 
+	private int price; 
+	private String company; 
+	private int page; 
 	
 	public String getTitle() {
 		return title;

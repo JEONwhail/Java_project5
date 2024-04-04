@@ -9,7 +9,7 @@ package method.quiz;
  * */
 public class Quiz6 {
 
-	//계산기 메소드 선언
+
 	public static void calc(int n1, int n2, char oper){
 		int result;
 		switch (oper) {
@@ -17,23 +17,33 @@ public class Quiz6 {
 			result = n1 + n2;
 			System.out.println(n1+"+"+n2+"="+result);
 			break;
+			
 		case '-':
 			result = n1 - n2;
 			System.out.println(n1+"-"+n2+"="+result);
 			break;
+			
+			
 		case '*':
 			result = n1 * n2;
 			System.out.println(n1+"*"+n2+"="+result);
 			break;
+			
+			
 		case '/':
 			result = n1 / n2;
 			System.out.println(n1+"/"+n2+"="+result);
-			break;	
+			break;
+			
+			
 		}
 	}
 	
 	public static void main(String[] args) {
-		calc(5,2,'+');
+		calc(5,1,'+');
+		calc(5,1,'-');
+		calc(5,1,'*');
+		calc(5,1,'/');
 	}
 
 }
